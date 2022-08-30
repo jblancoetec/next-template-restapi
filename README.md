@@ -1,34 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Base para proyectos en NextJS Server✍️
 
-## Getting Started
+Este template esta dirigido a todos aquellos que inician en `NextJS` un proyecto nuevo. Para usarlo, simplemente tienes hacer un `fork` o usar el botón `use this template`.
 
-First, run the development server:
+## Entorno
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Asegurarse de tener instalado `git` . Esto se puede revisar muy fácilmente a trevés del comando `git --version` . En caso de no estar instalado, se puede hacer a través de los siguientes paso
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- En linux, a travez del comando `sudo apt install git`.
+- En Windows, a travez de la pagina oficial https://git-scm.com/
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Procurar tener actualizado `node.js` a la versión `lts`. Si desea asegurarse, puede ejecutar el comando `npm doctor` que le indicara si cumple con los requisitos. Si el comando no se encuentra o `node.js` esta des actualizado, puede instalar `node.js --lts` mediante alguno de los siguientes pasos
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- En windows, desde la [pagina oficial](https://nodejs.org/en/), descargando y ejecutando la versión `lts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- En Linux, a través de `nvm`.
 
-## Learn More
+  - Abrir una terminal y ejecutar alguno de los siguientes comando
 
-To learn more about Next.js, take a look at the following resources:
+    ```
+    curl -o- [https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh](https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh) | bash
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```
+    wget -qO- [https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh](https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh) | bash
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+  - Cerrar la terminal y abrir otra para ejecutar el siguiente comando para verificar la correcta instalación`nvm --version` . Una vez observada la versión, ejecutar el siguiente comando para instalar Node.js
 
-## Deploy on Vercel
+    ```
+    nvm install --lts
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Instalación y ejecución
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 🛠Para instalar las dependencias ejecutar el siguiente comando `npm install`
+- ⚒Para ejecutar el modo playground o repl, ejecutar el siguiente comando `npm run dev`
+- 🔧Para traducir el código en `/src` a `JavaScript` , usar el comando `npm run build`
+- 🔑Para ejecutar el código con `Node.js`, usar el comando `npm run start`
+- 🧪Para ejecutar los test con jest, usar el comando `npm run test`
+- 🧪Para ejecutar los test de covertura, usar el comando `npm run test:coverage`
+
+## Características
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
